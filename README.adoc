@@ -2,3 +2,17 @@
 
 This project aims to demo the Red Hat Service Registry product based on the open-source https://www.apicur.io/registry/[Apicurio Registry].
 
+== Running
+
+Export the variables
+
+    export KAFKA_HOST=ramalho-cgi-r--m-dhraomrp--g.bf2.kafka.rhcloud.com:443
+    export SERVICE_REGISTRY_URL=https://bu98.serviceregistry.rhcloud.com
+    export SERVICE_REGISTRY_CORE_PATH=/apis/registry/v2
+    export RHOAS_SERVICE_ACCOUNT_OAUTH_TOKEN_URL=https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token
+    export RHOAS_SERVICE_ACCOUNT_CLIENT_ID=my-long-client-id
+    export RHOAS_SERVICE_ACCOUNT_CLIENT_SECRET=my-log-secret
+
+Run the code
+
+    mvn quarkus:dev
