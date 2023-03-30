@@ -1,0 +1,4 @@
+== Red Hat Service Registry demo
+
+This project aims to demo the Red Hat Service Registry product based on the open-source https://www.apicur.io/registry/[Apicurio Registry].
+
