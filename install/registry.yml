@@ -1,0 +1,12 @@
+apiVersion: registry.apicur.io/v1
+kind: ApicurioRegistry
+metadata:
+  name: registry
+spec:
+  configuration:
+    persistence: 'sql'
+    sql:
+      dataSource:
+        url: 'jdbc:postgresql://postgresql.apicurio.svc:5432/registry'
+        userName: 'redhat'
+        password: 'redhat'
